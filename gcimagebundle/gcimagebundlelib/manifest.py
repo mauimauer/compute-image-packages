@@ -67,8 +67,6 @@ class ImageManifest(object):
 
   def _IsManifestNeeded(self):
     """Determines if a manifest should be bundled with the disk."""
-    if self._licenses:
-      return len(self._licenses)
     return False
 
   def _WriteToFile(self, file_obj):
